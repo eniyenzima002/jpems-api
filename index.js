@@ -14,7 +14,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-    origin: "https://jp-maendeleo-farm.vercel.app/",
+    origin: "*",
     credentials: true
 }));
 app.use(express.json());
